@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/btOptions"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="Profile Options"
+                android:background="@drawable/rounded_corner_button"
+                android:scaleType="fitXY"
+                android:padding="6dp"
+                android:src="@drawable/baseline_menu_32"
+                app:tint="#0092FD" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/btNotification"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="Notification Options"
+                android:background="@drawable/rounded_corner_button"
+                android:scaleType="fitXY"
+                android:padding="6dp"
+                android:src="@drawable/outline_notifications_32"
+                app:tint="#0092FD" />
+
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgPerfil"
+            app:shapeAppearanceOverlay="@style/Circular"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/baseline_profile_32"
+            app:tint="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/txtNomePerfil"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_location_20"
+                />
+
+            <TextView
+                android:id="@+id/txtLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guarulhos - SP, Brasil"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btEdit"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:text="Editar Perfil"
+            android:textAllCaps="false"
+            android:textColor="#0076FF"
+            android:textSize="20dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone"/>
+
+        <TextView
+            android:id="@+id/txtCelularPerfil"
+            android:background="@drawable/rounded_corner"
+            android:padding="6dp"
+            android:paddingStart="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"/>
+
+        <TextView
+            android:id="@+id/txtEmailPerfil"
+            android:background="@drawable/rounded_corner"
+            android:padding="6dp"
+            android:paddingStart="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:paddingLeft="15dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:background="#2DCCFE"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btTravel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Travel"
+            android:background="#00000000"
+            android:rotation="45"
+            android:src="@drawable/airplane_outline_32"/>
+
+        <ImageButton
+            android:id="@+id/btHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:background="#00000000"
+            android:src="@drawable/outlined_home_32"/>
+
+        <ImageButton
+            android:id="@+id/btMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="Menu"
+            android:src="@drawable/baseline_menu_32"/>
+
+    </LinearLayout>
+
+</LinearLayout>

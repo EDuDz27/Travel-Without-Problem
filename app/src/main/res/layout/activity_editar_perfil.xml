@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@color/azul1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btVoltar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_button"
+                android:contentDescription="Go Back button"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_arrow_back_32"
+                app:tint="#0092FD" />
+
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:src="@drawable/baseline_profile_32"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:tint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/alterarNome"
+            android:hint="Nome"
+            android:background="@drawable/button_cadastro"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/alterarCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_cadastro"
+            android:hint="Celular"
+            android:padding="6dp" />
+
+        <EditText
+            android:id="@+id/alterarEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_cadastro"
+            android:hint="Email"
+            android:padding="6dp" />
+
+        <EditText
+            android:id="@+id/alterarSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_cadastro"
+            android:hint="Senha"
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/btAplicar"
+            android:background="@drawable/button_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Aplicar Alterações"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
